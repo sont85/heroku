@@ -6,7 +6,7 @@
     <script>
       var app = angular.module("fs", ["firebase"]);
       app.controller("fsCtrl", function($scope, $http, $firebaseObject, $firebaseArray) {
-        var ref = new Firebase("https://samer-node-testing.firebaseio.com/");
+        var ref = new Firebase("https://nodepractice.firebaseio.com/");
         var entriesRef = ref.child("entries");
         var totalsRef = ref.child("totals");
         $scope.entries = $firebaseArray(entriesRef);
