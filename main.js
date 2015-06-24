@@ -46,6 +46,7 @@ function responseHandler(req, res) {
         apiResult = Calc(apiValue);
         res.end(apiResult+"\n");
         break;
+        
     }
     fbEntriesRef.push({
       apiEndPoint: apiEndpoint,
